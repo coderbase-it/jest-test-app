@@ -13,6 +13,9 @@ Majestic for best visualization of tests
 install majestic in global 
 npm install majestic -g 
 https://github.com/Raathigesh/majestic
+run it : majestic 
 
+Usage of VS code extension : 
+https://marketplace.visualstudio.com/items?itemName=vespa-dev-works.jestRunIt
 
 

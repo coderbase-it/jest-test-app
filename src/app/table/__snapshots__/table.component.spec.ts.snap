@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableComponent snapshot test 1`] = `
+<app-table
+  __ngContext__={[Function LRootView]}
+  headers={[Function Array]}
+>
+  <table
+    class="table table-dark"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          col1
+        </th>
+        <th
+          scope="col"
+        >
+          col2
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</app-table>
+`;

@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
+import { TableComponent } from './table/table.component';
 
 
 /**
@@ -88,7 +89,7 @@ describe('AppComponent', () => {
        RouterTestingModule
       ],
       declarations: [
-        AppComponent, ButtonComponent
+        AppComponent, ButtonComponent, TableComponent
       ]
     }).compileComponents();
   });
