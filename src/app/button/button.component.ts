@@ -9,14 +9,19 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input() buttonTitle: string;
   @Output() buttonClicked = new EventEmitter()
+
+  private privateProperty = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   clickOnButton(){
-    console.log('hello')
+    //console.log('hello')
     this.buttonClicked.emit()
   }
 
+  private privateMethod(){
+    return false
+  }
 }

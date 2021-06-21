@@ -58,4 +58,16 @@ describe('ButtonComponent', () => {
     expect(spy).toHaveBeenCalledTimes(1)
   });
 
+
+  it('should have privateProperty with false value', () => {
+    expect(component['privateProperty']).toBeDefined()
+    expect(component['privateProperty']).toBeFalsy()
+  });
+
+
+  it('should have privateMethod which return false value', () => {
+    expect(component['privateMethod']).toBeDefined()
+    expect(component['privateMethod']()).toBeFalsy()
+  });
+
 });

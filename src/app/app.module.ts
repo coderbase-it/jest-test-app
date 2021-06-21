@@ -7,17 +7,22 @@ import { ButtonComponent } from './button/button.component';
 import { TableComponent } from './table/table.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TodoFormComponent } from './todo-form/todo-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    TableComponent
+    TableComponent,
+    TodoFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,7 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { RouterOutlet } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
@@ -83,6 +85,8 @@ describe('AppComponent', () => {
 
 
  describe('AppComponent', () => {
+   let fixture: ComponentFixture<AppComponent>
+   let component : AppComponent;
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -93,22 +97,28 @@ describe('AppComponent', () => {
       ]
     }).compileComponents();
   });
+  beforeEach(( ) => {
+    fixture = TestBed.createComponent(AppComponent);
+    component  =  fixture.componentInstance;
+    fixture.detectChanges();
+  })
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 
   it(`should have as title 'jest-test-app'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('jest-test-app');
+
+    expect(component.title).toEqual('jest-test-app');
+  });
+
+  it(`should have router-outlet'`, () => {
+    const routeroutLet = fixture.debugElement.query(By.directive(RouterOutlet));
+
+		expect(routeroutLet).toBeDefined()
   });
 
   it('Check template  contain h1 and app-button tag ', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
     const compiled = fixture.nativeElement;
     console.log(compiled.innerHTML)
     // expect(compiled.querySelector('h1')).toBeTruthy()

@@ -1,4 +1,6 @@
-# Jest test app 
+# Angular Jest  Unit Testing Examples
+
+![unit-testing](./test.gif)
 
 project generated with angular cli 11.2.14
 and node 12.15.0
@@ -19,3 +21,4 @@ Usage of VS code extension :
 https://marketplace.visualstudio.com/items?itemName=vespa-dev-works.jestRunIt
 
 
+ 

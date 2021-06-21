@@ -45,7 +45,7 @@ describe('ApiService', () => {
   });
 
 
-  it(' method listPosts should return observable and call url with right http method', waitForAsync(() => {
+  it(' method listPosts should return observable and call url with get http method', waitForAsync(() => {
     let postsData: any[];
     service.listPosts().subscribe((posts: any[])=> {
       postsData = posts
