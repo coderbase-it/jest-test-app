@@ -10,6 +10,7 @@ import { TableComponent } from './table/table.component';
 
 /**
  * ISOLATED TESTING EXAMPLE
+ *  NO HTML is generated
  */
 
 describe('App component test suite', () => {
@@ -71,11 +72,18 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
+    console.log(compiled)
 
     expect(compiled.querySelector('h1')).toBeTruthy()
     expect(compiled.querySelector('app-button')).toBeTruthy()
     //expect(compiled.querySelector('.content span').textContent).toContain('jest-test-app app is running!');
   });
+
+  it('snapshot testing', ()=> {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    expect(fixture).toMatchSnapshot()
+  })
 });
 
 
@@ -125,4 +133,9 @@ describe('AppComponent', () => {
     // expect(compiled.querySelector('app-button')).toBeTruthy()
     //expect(compiled.querySelector('.content span').textContent).toContain('jest-test-app app is running!');
   });
+
+  it('snapshot testing', ()=> {
+
+    expect(fixture).toMatchSnapshot()
+  })
 });

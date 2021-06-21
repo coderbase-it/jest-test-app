@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent snapshot testing 1`] = `
+<app-root
+  __ngContext__={[Function LRootView]}
+  title={[Function String]}
+>
+  <app-button
+    buttontitle="super title"
+  /><app-table>
+    <tr>
+      <th
+        scope="row"
+      >
+        1
+      </th>
+      <td>
+        Mark
+      </td>
+      <td>
+        Otto
+      </td>
+      <td>
+        @mdo
+      </td>
+    </tr>
+  </app-table><h1>
+    Hello
+  </h1><router-outlet />
+</app-root>
+`;
+
+exports[`AppComponent snapshot testing 2`] = `
+<app-root
+  __ngContext__={[Function LRootView]}
+  title={[Function String]}
+>
+  <app-button
+    buttontitle="super title"
+  >
+    <button>
+       super title
+  
+    </button>
+    
+  </app-button><app-table>
+    <table
+      class="table table-dark"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            col1
+          </th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            Mark
+          </td>
+          <td>
+            Otto
+          </td>
+          <td>
+            @mdo
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </app-table><h1>
+    Hello
+  </h1><router-outlet />
+</app-root>
+`;

@@ -1,1 +1,8 @@
-<p>todo-form works!</p>
+<form [formGroup]="myForm" (ngSubmit)="register()">
+  <input type="text" id="email-field-id" formControlName="email">
+  <div id="error-email-id" *ngIf="myForm.get('email').touched">Error email</div>
+  <input type="password" id="password-field-id" formControlName="password">
+  <button id="button-id"  [disabled]="myForm.invalid"> register </button>
+</form>
+
+
