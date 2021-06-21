@@ -24,12 +24,15 @@ in setup-jest  to
 
 ## Testing 
 
-[Form example](./blob/master/src/app/todo-form/todo-form.component.spec.ts)
-[Component](./blob/master/src/app/button/button.component.spec.ts)
-[Service](./blob/master/src/app/services/api.service.spec.ts)
-[Content Projection](./blob/master/src/app/table/table.component.spec.ts)
+[Form example](./src/app/todo-form/todo-form.component.spec.ts)
 
-##  Tools 
+[Component](./src/app/button/button.component.spec.ts)
+
+[Service](./src/app/services/api.service.spec.ts)
+
+[Content Projection](./src/app/table/table.component.spec.ts)
+
+##  Tools   
 
 [Majestic Jest UI](https://github.com/Raathigesh/majestic)
 ```
